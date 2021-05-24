@@ -16,11 +16,13 @@
 </head>
 <body class="login-page">
     <header class="miri-ui-kit-header header-no-bg-img header-navbar-only">
-       
+      
+   </header>
 
+<div align="center" style="background: white"> <img src="img/logo1.png" height="150px">  <img src="img/logo3.jpg" height="150px"> <img src="img/logo2.jpg" height="150px"> <img src="img/logo4.jpg" height="150px"> </div>
+<div>  </div>
 
-    </header>
-    <div class="card login-card">
+    <div class="card login-card" style="margin-top: 30px">
         <div class="card-body">
             <h3 class="text-center text-white font-weight-light mb-4">CIIE</h3>
             <form method="POST" action="loginin.php">

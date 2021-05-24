@@ -8,7 +8,7 @@ class Conexion  // se declara una clase para hacer la conexion con la base de da
 		$conection['server']="localhost";  //host
 		$conection['user']="root";         //  usuario
 		$conection['pass']="";             //password
-		$conection['base']="sorjuana";           //base de datos
+		$conection['base']="ciie";           //base de datos
 
 		// crea la conexion pasandole el servidor , usuario y clave
 		//$conect= mysqli_connect($conection['server'],$conection['user'],$conection['pass']);

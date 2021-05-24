@@ -6,12 +6,16 @@ include("save_objeto.php");
 switch ($_POST["opc"]) {
 
 	case '1': 
-	$salvarE = new Aprende();
-    $valor = $_POST["idgrupo"];
-	$salvarE->insertAlumno($_POST["nombre"],$_POST["apellido"],$_POST["tutor"],$_POST["direccion"],$_POST["matricula"]);
-	header("Location:agr_alumno.php");
+	$salvarE = new ciie();
+	$salvarE->insertEmprendedor($_POST["nombre"],$_POST["apellido"],$_POST["direccion"],$_POST["movil"],$_POST["email"],$_POST["profesion"]);
+	header("Location:emprendedor.php");
 	break;
 
+	case '2': 
+	$salvarE = new ciie();
+	$salvarE->insertProyecto($_POST["fecha"],$_POST["nombre"],$_POST["estatus"],$_POST["idempre"]);
+	header("Location:proyectos.php");
+	break;
 
 	default:
 		# code...
