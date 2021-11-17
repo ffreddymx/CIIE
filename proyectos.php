@@ -98,7 +98,7 @@ $view->empre =ciie::getEmprendedor();
             tablacuerpo::proyecto("SELECT P.id, E.id as ide, P.Nombre as Proyectos, P.Fecha, P.Estatus, E.Nombre as Emprendedor, E.Apellido
               FROM proyectos as P
               inner join emprendedor as E on P.idemprendedor = E.id
-              order by P.Nombre",1,$conexion);
+              order by P.Nombre",1,$conexion,1);
              ?>
             </tbody>
             </table>

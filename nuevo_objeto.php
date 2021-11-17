@@ -3,7 +3,7 @@ include 'capa.php';
 include("save_objeto.php");
 
 
-switch ($_POST["opc"]) {
+switch ($_POST["opc"] | $_POST["opcu"]) {
 
 	case '1': 
 	$salvarE = new ciie();
@@ -69,6 +69,24 @@ switch ($_POST["opc"]) {
 		$salvarE->insertAsignaAsesor($_POST["asesor"],$_POST["proyecto"]);
 		header("Location:asig_asesor.php");
 		break;
+
+	case '9': //asesor
+		$id = $_POST["IDu"];
+		$asesor = $_POST["asesor"];
+		$proyecto = $_POST["proyecto"];
+	
+		$result  = mysqli_query($conexion, "UPDATE asepro SET idpro='$proyecto',idase='$asesor' WHERE id='$id' ");
+		if($result){ echo 'data updated'; }
+		mysqli_close($conexion);
+		header("Location:asig_asesor.php");
+		break;
+
+	case '10': 
+		$salvarE = new ciie();
+		$salvarE->eliminarAsignaAsesor($_POST['IDx']);
+		header("Location:asig_asesor.php");
+		break;
+
 
 
 	default:

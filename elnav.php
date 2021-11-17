@@ -24,8 +24,13 @@
         <a class="nav-link" href="asig_asesor.php">Asignar asesor</a>
       </li>
 
-      <li class="nav-item">
-        <a class="nav-link" href="#">Generar reportes</a>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Reportes de Proyectos</a>
+        <div class="dropdown-menu">
+        <a class="dropdown-item" href="repo_proyecto.php?status=Proceso">En Proceso</a>
+        <a class="dropdown-item" href="repo_proyecto.php?status=Aceptado">Aceptado</a>
+        <a class="dropdown-item" href="repo_proyecto.php?status=Finalizado">Finalizado</a>
+        </div>
       </li>
       
       <li class="nav-item dropdown">

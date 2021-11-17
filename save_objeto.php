@@ -121,5 +121,14 @@ values('$this->nombre','$this->fecha','$this->estatus','$this->idempre')";
 			return $obj_cliente->getAffect(); // retorna todos los registros afectados
 		}
 
+		public  function eliminarAsignaAsesor($var)	// elimina el embarque comlepleto con el folio
+		{
+			$obj_cliente=new sQuery();
+			$query="DELETE from asepro where id ='$var' ";
+			$obj_cliente->executeQuery($query); // ejecuta la consulta para  borrar el cliente
+			return $obj_cliente->getAffect(); // retorna todos los registros afectados
+		}
+
+
 }//fin
 ?>
