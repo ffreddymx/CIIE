@@ -119,15 +119,15 @@ function Header()
 {
 
 //$this->Image('../statics/logo.jpg',7,4,40,30);
-//$this->Image('img/logo' ,240,5,25,20);
+$this->Image('img/logopdf.jpg' ,1,2,230,20);
 $status = (isset($_GET['status'])) ? $_GET['status'] : '';
 
     $this->SetFont('Arial','B',12);
-    $this->SetXY(50,16);
+    $this->SetXY(50,22);
     $this->Cell(10,6,utf8_decode("REPOSITORIO DE PROYECTOS Y EMPRENDEDORES DEL CIIES"),0,1,'L');
     $this->SetFont('Arial','',12);
-    $this->SetXY(90,22);
-    $this->Cell(0,6,utf8_decode("Proyectos : ".$status),0,1,'L');
+    $this->SetXY(90,27);
+    $this->Cell(0,6,utf8_decode("Proyectos en : ".$status),0,1,'L');
 
 
 }
@@ -179,7 +179,7 @@ function Footer()
               order by P.Nombre ");
               $query =  mysqli_query($conexion,$consulta); //parte1
 
-    $pdf->Ln(10);
+    $pdf->Ln(5);
 
      $pdf->SetWidths(array(60,20,50,50,20));
      $pdf->SetFont('Arial','B',9,'L');

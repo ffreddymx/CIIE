@@ -14,9 +14,28 @@
  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
  -->
+<style>
+
+body{
+    background: rgb(196,196,199);
+background: linear-gradient(180deg, rgba(196,196,199,1) 0%, rgba(255,255,255,1) 100%, rgba(209,209,221,1) 100%, rgba(0,212,255,1) 100%); 
+background-position: center center;
+background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+
+</style>
+
+
 </head>
 
-<body style="background-color:#F2F4F4 ;">
+
+
+
+<body >
 
 <!--      -->
 <?php include 'elnav.php'; ?>

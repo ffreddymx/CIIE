@@ -102,7 +102,7 @@ $proye->proyecto = ciie::getProyecto();
 
           <div class="col-sm-3">
           <form name="form" action="nuevo_objeto.php" method="post" >
-                  <input type="hidden" name="opcu" id="opcu" value="">
+                  <input type="hidden" name="opcu" id="opcu" value="8">
 
               <label>Asesor</label>
               <select class="form-control" id="asesor" name="asesor">
@@ -156,7 +156,7 @@ $proye->proyecto = ciie::getProyecto();
 
 
             <?php
-            echo "<table class='table table-sm table-hover'  >";//iniciamos la tabla
+            echo "<table class='table table-sm table-hover  table-dark'  >";//iniciamos la tabla
             tablacuerpo::asigasesor("SELECT AA.id,A.id as aseso, P.id as proye, P.Nombre as Proyecto, P.Fecha,P.Estatus, concat( E.Nombre,' ',E.Apellido ) as Alumno, 
             concat( A.Nombre,' ',A.Apellido ) as Asesor 
               FROM asepro as AA

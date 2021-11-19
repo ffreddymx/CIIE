@@ -13,13 +13,25 @@
     <link rel="stylesheet" href="src/css/miri-ui-kit-free.css">
 
     <!-- Stylesheet for demo page specific css -->
+
+<style>
+      body {
+  background-image: url(img/fondo.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  }
+</style>
+
+
 </head>
 <body class="login-page">
     <header class="miri-ui-kit-header header-no-bg-img header-navbar-only">
       
    </header>
 
-<div align="center" style="background: white"> <img src="img/logo1.png" height="150px">  <img src="img/logo3.jpg" height="150px"> <img src="img/logo2.jpg" height="150px"> <img src="img/logo4.jpg" height="150px"> </div>
+<div align="center" style="background: white"> <img src="img/logo1.png" height="100px">  <img src="img/logo3.jpg" height="100px"> <img src="img/logo2.jpg" height="100px"> <img src="img/logo4.jpg" height="100px"> </div>
 <div>  </div>
 
     <div class="card login-card" style="margin-top: 30px">

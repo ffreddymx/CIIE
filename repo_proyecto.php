@@ -85,14 +85,14 @@ $status = (isset($_GET['status'])) ? $_GET['status'] : '';
 
 
 
-            echo "<table class='table table-sm table-hover'  >";//iniciamos la tabla
+            echo "<table class='table table-sm table-hover  table-dark'  >";//iniciamos la tabla
             tablacuerpo::asigasesor("SELECT AA.id,A.id as aseso, P.id as proye, P.Nombre as Proyecto, P.Fecha,P.Estatus, concat( E.Nombre,' ',E.Apellido ) as Alumno, 
             concat( A.Nombre,' ',A.Apellido ) as Asesor 
               FROM asepro as AA
               inner join asesor as A on AA.idase = A.id
               inner join proyectos as P on AA.idpro = P.id
               inner join emprendedor as E on E.id = P.idemprendedor
-              where Estatus = '$status'
+              where P.Estatus = '$status'
               order by P.Nombre",0,$conexion,2);
              ?>
             </tbody>

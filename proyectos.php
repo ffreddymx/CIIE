@@ -94,7 +94,7 @@ $view->empre =ciie::getEmprendedor();
 
 
             <?php
-            echo "<table class='table table-sm table-hover'  >";//iniciamos la tabla
+            echo "<table class='table table-sm table-hover  table-dark'  >";//iniciamos la tabla
             tablacuerpo::proyecto("SELECT P.id, E.id as ide, P.Nombre as Proyectos, P.Fecha, P.Estatus, E.Nombre as Emprendedor, E.Apellido
               FROM proyectos as P
               inner join emprendedor as E on P.idemprendedor = E.id

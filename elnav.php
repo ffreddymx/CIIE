@@ -33,13 +33,7 @@
         </div>
       </li>
       
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Cambios</a>
-        <div class="dropdown-menu">
-          <a class="dropdown-item" href="#">Acciones</a>
-        </div>
-      </li>
-
+ 
             <li class="nav-item">
         <a class="nav-link" href="exit.php">Salir</a>
       </li>

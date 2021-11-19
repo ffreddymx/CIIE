@@ -5,13 +5,15 @@ include("tablasUniver/cuerpo.php");
 
 ?>
 
-<p class="lead" style="margin-top: 0px" >Lista de Emprendedores</p> <hr class="my-1" >
-    <div  align="left" style="margin-bottom: 5px; margin-top: 0px;">
+<div calss='bg-dark text-white'>
+<p class="lead " style="margin-top: 0px" >Lista de Emprendedores</p> <hr class="my-1" >
+    <div  align="left" style="margin-bottom: 5px; margin-top: 0px; " class = "">
       <a  class="btn btn-info" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
     Nuevo Emprendedor
    </a>
     </div>
 
+  </div>
 
 
     <div class="collapse" id="collapseExample" style="margin-bottom: 0px; margin-top: 0px;">
@@ -100,7 +102,7 @@ include("tablasUniver/cuerpo.php");
 
 
             <?php
-            echo "<table class='table table-sm table-hover'  >";//iniciamos la tabla
+            echo "<table class='table table-sm  table table-hover table-dark' >";//iniciamos la tabla
             tablacuerpo::emprendedor("SELECT * FROM emprendedor order by Nombre",1,$conexion);
              ?>
             </tbody>
